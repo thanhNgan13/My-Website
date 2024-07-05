@@ -133,7 +133,7 @@ nav ul li a:hover {
 
 .explore {
   text-decoration: none;
-  color: #00f;
+  color: rgb(101, 101, 241);
   font-size: 16px;
   transition: color 0.3s;
 }

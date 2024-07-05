@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Interface</title>
-    <link rel="stylesheet" href="..\assets\styles.css" />
+    <link rel="stylesheet" href="/assets/styles.css" />
   </head>
   <body>
     <div class="content">
       <header>
         <nav>
           <ul>
-            <li><a href="#">Products</a></li>
+            <li><a href="#" id="products-link">Products</a></li>
             <li><a href="#">Discounts</a></li>
             <li>
               <div class="logo-container">
-                <img src="..\assets\logo.svg" alt="Logo" class="logo" />
+                <img src="/assets/logo.svg" alt="Logo" class="logo" />
               </div>
             </li>
             <li><a href="#">Our Partners</a></li>
@@ -61,5 +61,14 @@
     <footer>
       <p>© GEM PAINT CO</p>
     </footer>
+
+    <script>
+      document
+        .getElementById("products-link")
+        .addEventListener("click", (event) => {
+          event.preventDefault();
+          window.location.href = "/products.html";
+        });
+    </script>
   </body>
 </html>
